@@ -11,6 +11,8 @@ A modern, responsive static HTML website for Elite Fit Circle, a men's fitness c
 - **Sections Include**:
   - Hero section with call-to-action
   - About the group with statistics
+  - Founder profile with image and highlights
+  - YouTube podcast playlist (embedded)
   - Activities showcase (6 main activities)
   - Benefits of joining (6 key benefits)
   - Join section with prominent CTAs
@@ -37,10 +39,12 @@ A modern, responsive static HTML website for Elite Fit Circle, a men's fitness c
 
 ```
 elitefitcircle/
-├── index.html      # Main HTML file
-├── styles.css      # Stylesheet
-├── script.js       # JavaScript for interactivity
-└── README.md       # Documentation
+├── index.html          # Main HTML file
+├── styles.css          # Stylesheet
+├── script.js           # JavaScript for interactivity
+├── founder.jpg         # Founder's image (add your own)
+├── founder.jpg.txt     # Instructions for adding founder image
+└── README.md           # Documentation
 ```
 
 ## Getting Started
@@ -51,20 +55,42 @@ elitefitcircle/
 
 ## Customization
 
+### Add Founder Image
+1. Save the founder's photo as `founder.jpg` in the root directory
+2. Recommended dimensions: 600x800 pixels (3:4 aspect ratio)
+3. Supported formats: JPG or PNG
+4. See `founder.jpg.txt` for detailed instructions
+
+If using a different filename, update line 74 in `index.html`:
+```html
+<img src="YOUR_IMAGE_FILE.jpg" alt="Founder of Elite Fit Circle" class="founder-image">
+```
+
+### Update Founder Info
+Edit the founder section in `index.html` (lines 76-93) to customize:
+- Bio text
+- Highlights (Certified Fitness Expert, Content Creator, etc.)
+
+### YouTube Playlist
+The playlist is already embedded (lines 108-115 in `index.html`). To change it:
+```html
+<iframe src="https://www.youtube.com/embed/videoseries?list=YOUR_PLAYLIST_ID">
+```
+
 ### Update WhatsApp Link
-Edit the "Join WhatsApp Group" button in `index.html` (line ~154):
+Edit the "Join WhatsApp Group" button in `index.html` (around line 206):
 ```html
 <a href="YOUR_WHATSAPP_GROUP_LINK" class="btn btn-primary btn-large">Join WhatsApp Group</a>
 ```
 
 ### Modify Statistics
-Update the numbers in the stats section (lines ~60-72 in index.html)
+Update the numbers in the stats section (lines 49-60 in index.html)
 
 ### Change Colors
 Modify the CSS variables in `styles.css` (lines 9-18)
 
 ### Add Social Media Links
-Update footer links (lines ~167-178 in index.html)
+Update footer links with your actual social media URLs (lines 235-239 in index.html)
 
 ## Browser Support
 

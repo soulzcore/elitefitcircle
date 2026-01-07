@@ -1,0 +1,10 @@
+PLACEHOLDER: Add founder image here
+
+To add the founder's image:
+1. Save the founder's photo as "founder.jpg" in the root directory
+2. Recommended dimensions: 600x800 pixels (3:4 aspect ratio)
+3. Supported formats: JPG, PNG
+4. The image will automatically display with the styled border and hover effects
+
+If you want to use a different filename or format, update line 74 in index.html:
+<img src="founder.jpg" alt="Founder of Elite Fit Circle" class="founder-image">
