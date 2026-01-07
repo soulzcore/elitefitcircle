@@ -55,16 +55,24 @@ elitefitcircle/
 
 ## Customization
 
-### Add Founder Image
-1. Save the founder's photo as `founder.jpg` in the root directory
-2. Recommended dimensions: 600x800 pixels (3:4 aspect ratio)
-3. Supported formats: JPG or PNG
-4. See `founder.jpg.txt` for detailed instructions
+### Add Founder Image (YouTube Thumbnail)
+The website is configured to use a YouTube video thumbnail as the founder's image.
 
-If using a different filename, update line 74 in `index.html`:
-```html
-<img src="YOUR_IMAGE_FILE.jpg" alt="Founder of Elite Fit Circle" class="founder-image">
-```
+**To set up:**
+1. Go to your YouTube playlist and click on a video
+2. Copy the video ID from the URL (the part after `v=`)
+3. Open `index.html` and find line 74
+4. Replace `VIDEO_ID_HERE` with your actual video ID (appears twice)
+5. Example: `https://img.youtube.com/vi/ABC123XYZ/maxresdefault.jpg`
+
+**YouTube thumbnail URLs:**
+- `maxresdefault.jpg` - Highest quality (1280x720)
+- `hqdefault.jpg` - High quality (480x360) - fallback
+- See `founder.jpg.txt` for detailed instructions
+
+**Alternative - Use a regular image file:**
+1. Save your image as `founder.jpg` in the root directory
+2. Update line 74 to: `<img src="founder.jpg" alt="Founder of Elite Fit Circle" class="founder-image">`
 
 ### Update Founder Info
 Edit the founder section in `index.html` (lines 76-93) to customize:

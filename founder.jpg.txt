@@ -1,10 +1,30 @@
-PLACEHOLDER: Add founder image here
+USING YOUTUBE VIDEO THUMBNAIL AS FOUNDER IMAGE
 
-To add the founder's image:
-1. Save the founder's photo as "founder.jpg" in the root directory
-2. Recommended dimensions: 600x800 pixels (3:4 aspect ratio)
-3. Supported formats: JPG, PNG
-4. The image will automatically display with the styled border and hover effects
+The website is currently configured to use a YouTube video thumbnail as the founder's image.
 
-If you want to use a different filename or format, update line 74 in index.html:
-<img src="founder.jpg" alt="Founder of Elite Fit Circle" class="founder-image">
+TO GET YOUR VIDEO ID:
+1. Go to your YouTube playlist: https://youtube.com/playlist?list=PLwM8qckeov89vHsSNq5hQQL32b3iDF5t9
+2. Click on any video in the playlist
+3. Look at the URL in your browser - it will look like: https://www.youtube.com/watch?v=ABC123XYZ
+4. Copy the part after "v=" (e.g., "ABC123XYZ") - this is your VIDEO ID
+
+TO UPDATE THE IMAGE IN THE WEBSITE:
+1. Open index.html in a text editor
+2. Find line 74 (in the Founder section)
+3. Replace "VIDEO_ID_HERE" with your actual video ID (appears twice on the same line)
+4. Example: Change this:
+   <img src="https://img.youtube.com/vi/VIDEO_ID_HERE/maxresdefault.jpg" ...
+   To this:
+   <img src="https://img.youtube.com/vi/ABC123XYZ/maxresdefault.jpg" ...
+
+THUMBNAIL QUALITY OPTIONS:
+- maxresdefault.jpg = Highest quality (1280x720)
+- hqdefault.jpg = High quality (480x360) - used as fallback
+- mqdefault.jpg = Medium quality (320x180)
+- default.jpg = Standard quality (120x90)
+
+ALTERNATIVE: Use a Regular Image File
+If you prefer to use a regular image file instead:
+1. Save your image as "founder.jpg" in the root directory
+2. Update line 74 in index.html to:
+   <img src="founder.jpg" alt="Founder of Elite Fit Circle" class="founder-image">
