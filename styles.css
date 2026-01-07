@@ -266,6 +266,129 @@ section {
     font-size: 1rem;
 }
 
+/* Founder Section */
+.founder {
+    background: var(--dark-bg);
+}
+
+.founder-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.founder-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.3);
+}
+
+.founder-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+    transition: transform 0.3s;
+}
+
+.founder-image:hover {
+    transform: scale(1.05);
+}
+
+.founder-info h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.founder-info p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.founder-highlights {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--light-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.highlight-icon {
+    font-size: 1.5rem;
+}
+
+.highlight-item span:last-child {
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+/* Podcast Section */
+.podcast {
+    background: var(--darker-bg);
+}
+
+.podcast-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.podcast-intro p {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.podcast-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.video-featured {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.3);
+    border: 3px solid var(--primary-color);
+}
+
+.youtube-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.podcast-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.podcast-cta .btn {
+    animation: none;
+}
+
 /* Activities Section */
 .activities {
     background: var(--dark-bg);
@@ -458,6 +581,15 @@ section {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .founder-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .founder-highlights {
+        justify-content: center;
     }
 
     .activity-grid,
